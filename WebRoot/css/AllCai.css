@@ -1,0 +1,82 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+
+#box{
+	width:100%;
+}
+#box .show{
+	width:800px;
+	margin:0 auto;
+	position: relative;
+	border:1px solid #ccc;
+	margin-bottom: 20px;
+}
+#box .show .left{
+	width:200px;
+	height:200px;
+}
+#box .show .left img{
+	width:100%;
+	height:100%;
+}
+#box .show .right{
+	position: absolute;
+	top:0px;
+	left:200px;
+}
+#box .show .right a{
+	color:#333;
+	font-size£º40px;
+	font-weight: 400;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	display: block;
+	margin-top:20px;
+	margin-left:20px;
+}
+#box .show .right a:hover{
+	color:red;
+}
+#box .show .right .p1{
+	margin-top:10px;
+	margin-left:20px;
+}
+#box .show .right .p2{
+	margin-top:10px;
+	margin-left:20px;
+}
+#box .show .right .p3{
+	margin-top:10px;
+	margin-left:20px;
+}
+#box .show .right .p4{
+	margin-top:10px;
+	margin-left:20px;
+}
+#box .show .right .p5{
+	margin-top:10px;
+	margin-left:20px;
+}
+#box .show .right .edit{
+	display: inline;
+}
+#box .show .right .del{
+	display: inline;
+}
+#last{
+	width:100%;
+}
+#last #bar{
+	width:700px;
+	margin:0 auto;
+}
+#last #bar a{
+	display:block;
+	float:left;
+	padding-left:15px;
+	padding-right:15px;
+	height:30px;
+	border:1px solid #ccc;
+	line-height: 30px;
+}

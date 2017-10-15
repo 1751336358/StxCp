@@ -1,0 +1,237 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+audio{
+	width:900px;
+}
+a{
+	text-decoration: none;
+}
+#top{
+	width:100%;
+	height:40px;
+	background: #333333;
+}
+#top a{
+	text-decoration: none;
+	font-size:16px;
+	color:#ccc;
+	line-height: 40px;
+	font-family:  "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	display: block;
+	float:right;
+	padding-right:20px;
+}
+#list{
+	width:100%;
+	height:87px;
+}
+#list #deptlist{
+	width:900px;
+	height:87px;
+	margin:0 auto;
+}
+#list #deptlist #logo{
+	width:108px;
+	height:60px;
+	margin-top:10px;
+	display:block;
+	float:left;
+}
+#list #deptlist a{
+	color:#333;
+	font-size:20px;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	display:block;
+	float:left;
+	line-height: 87px;
+	margin-left:40px;
+}
+#list #deptlist a:hover{
+	color:#FF6795;
+}
+#search{
+	margin-top:30px;
+	margin-left:50px;
+	width:230px;
+	height:30px;
+	float:left;
+}
+#search #inputs{
+	width:160px;
+	height:30px;
+	float:left;
+	text-indent: 5px;
+}
+#search #submit{
+	height:30px;
+	width:70px;
+	float:left;
+	border:none;
+	background: #999999;
+	color:#FFFFFF;
+}
+#box1{
+	width:100%;
+	float:left;
+}
+#box1 #hotCai{
+	width:900px;
+	margin:0 auto;
+	margin:0 auto;
+	margin-top:50px;
+
+}
+#box1 #hotCai #tip{
+	color:#666;
+	font-weight: 500;
+	font-size:25px;
+	font-family:"Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+}
+#box1 #hotCai .hotlist{
+	float:left;
+	width:200px;
+	margin-top:20px;
+	border-bottom:1px solid #999;
+	margin-right:25px;
+}
+#box1 #hotCai .hotimg{
+	width:200px;
+	height:200px;
+}
+#box1 #hotCai .hotname{
+	width:100%;
+}
+#box1 #hotCai .hotname a{
+	display:block;
+	margin:0 auto;
+	font-size:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	color:black;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+}
+#box1 #hotCai .hotname a:hover{
+	color:red;
+}
+#box1 #hotCai .hottime{
+	color:#111;
+	font-size:14px;
+	font-family:  "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	padding-top:5px;
+	padding-bottom:5px;
+	float:left;
+}
+#box1 #hotCai .hotreadnum{
+	float:left;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:15px;
+}
+#box2{
+	width:100%;
+	float:left;
+	margin-top:80px;
+	
+}
+#box2 #show{
+	width:900px;
+	margin:0 auto;
+	
+
+}
+#box2 #show p{
+	color:#666;
+	font-weight:500;
+	font-size:25px;
+	font-family:"Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	margin-bottom: 20px;
+	padding-top:30px;
+}
+#box2 #show span{
+	font-size: 20px;
+	padding-right:30px;
+}
+#box2 #tuijian{	
+	width:900px;
+	margin:0 auto;
+	
+	
+	display:block;
+}
+#box2 #tuijian #tip{
+	color:#666;
+	font-weight:500;
+	font-size:25px;
+	font-family:"Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+}
+#box2 #show .dept{
+	color:black;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+}
+#box2 #show .dept:hover{
+	color:red;
+}
+#box2 #tuijian .tuijianlist{
+	float:left;
+	width:200px;
+	margin-top:20px;
+	border-bottom:1px solid #999;
+	margin-right:25px;
+}
+#box2 #tuijian  .tuijianimg{
+	width:200px;
+	height:200px;
+}
+#box2 #tuijian  .tuijianname{
+	width:100%;
+}
+#box2 #tuijian  .tuijianname a{
+	display:block;
+	margin:0 auto;
+	font-size:18px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	color:black;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;	
+}
+#box2 #tuijian .tuijianname a:hover{
+	color:red;
+}
+#box2 #tuijian .tuijiantime{
+	color:#111;
+	font-size:14px;
+	font-family:  "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	padding-top:5px;
+	padding-bottom:5px;
+	float:left;
+}
+#box2 #tuijian .tuijianreadnum{
+	float:left;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:15px;
+}
+#share{
+	/*border:10px solid green;*/
+	height:100px;
+	width:500px;
+	margin:0 auto;
+	margin-top:50px;
+	
+}
+#bdshare{
+	margin-top:100px;	
+	position:fixed;
+	right:0px;
+	bottom: 0px;
+
+}
+#qrcode{
+	position:fixed;
+	left:0px;
+	bottom:0px;
+}

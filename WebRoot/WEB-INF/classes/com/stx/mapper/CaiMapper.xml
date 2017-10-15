@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.CaiMapper">
+	<!-- 根据userid发布菜谱 -->
+	<insert id="addCai" parameterType="com.stx.pojo.Cai">
+		insert into cai(name,time,zhuliao,fuliao,detail,readnum,userid,deptid) values(#{name},#{time},#{zhuliao},#{fuliao},#{detail},0,#{userid},#{deptid})
+	</insert>
+	
+	<!-- 查看我的菜谱 ，根据userID-->
+	<select id="getMyCai" parameterType="int" resultType="com.stx.pojo.Cai">
+		select * from cai where userid=#{userid} order by id desc
+	</select>
+	
+	<!-- 删除菜，根据cai.id -->
+	<delete id="delCai" parameterType="int">
+		delete from Cai where id=#{id}
+	</delete>
+	
+	<!-- 查询菜谱，根据cai.id -->
+	<select id="selCaiById" resultType="com.stx.pojo.Cai" parameterType="int">
+		select *from cai where id=#{id}
+	</select>
+	
+	
+	<!-- 修改菜单 -->
+	<update id="EditCai" parameterType="com.stx.pojo.Cai">
+		update cai set name=#{name},zhuliao=#{zhuliao},fuliao=#{fuliao},time=#{time},detail=#{detail},deptid=#{deptid} where id=#{id}
+	</update>
+	
+	<!-- 更改阅读量 ,根据cai.id -->
+	<update id="addReadNum" parameterType="int">
+		update cai set readnum=readnum+1 where id=#{id}
+	</update>
+	
+</mapper>

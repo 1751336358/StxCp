@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.IndexMapper">
+	
+
+	
+	<!-- 查询热门菜谱 -->
+	<select id="hotCai" resultType="com.stx.pojo.Cai">
+		select * from cai order by readnum desc limit 0,16
+	</select>
+	
+	<!-- 根据dept.id查询每个菜系的推荐菜谱 -->
+	<select id="getTuijianCai" parameterType="int" resultType="com.stx.pojo.Cai">
+		select * from cai where deptid=#{id} order by readnum desc limit 0,16
+	</select>
+	
+	<!-- 用户访问网站的时间，访问量 -->
+	<insert id="insertTime" parameterType="String">
+		insert into fangwen(time) values(#{time})
+	</insert>
+	<!-- 访问总人数 -->
+	<select id="getFangwenNum" resultType="int">
+		select count(*) from fangwen
+	</select>
+	<!-- 根据关键字key查询出相关的菜谱 -->
+	<select id="selCaiByKey" parameterType="String" resultType="com.stx.pojo.Cai">
+		select * from cai where name like '%${value}%' order by readnum desc
+	</select>
+</mapper>

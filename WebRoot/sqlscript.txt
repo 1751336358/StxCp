@@ -1,0 +1,42 @@
+//用户表
+create table user(
+	id int primary key auto_increment,	//主键id
+	name	varchar(30),	//名字
+	username varchar(30),	//用户名
+	password varchar(50)	//密码
+);
+//菜系表
+create table dept(
+	id int primary key auto_increment,	//主键ID
+	name	varchar(30),	//菜系名
+);
+//菜谱表
+create table cai(
+	id int primary key auto_increment,	//主键id
+	name varchar(30),	//菜名
+	time varchar(30),	//创建时间
+	zhuliao	varchar(30),	//主料
+	fuliao	varchar(30),	//辅料
+	detail	varchar(2048),	//做法
+	readnum int defalut 0,	//阅读量,默认值为0
+	userid	int,	//外键，用户id
+	deptid int,		//外键，菜系ID
+	foreign key (userid)  references user(id) on delete cascade on update cascade,
+	foreign key (deptid)  references dept(id) on delete cascade on update cascade
+);
+
+ create table fangwen(
+  id int primary key auto_increment,
+  time varchar(30)
+ );
+
+//评论表
+create table say(
+	id int primary key auto_increment,	//主键id
+	userid int,	//userid
+	caiid int,	//cai.id
+	detail varchar(1024),	//评论内容
+	time varchar(30),	//评论时间
+	constraint user_id_FK foreign key (userid) references user(id) on delete cascade on update cascade,	//外键
+	constraint cai_id_FK foreign key (caiid) references cai(id) on delete cascade on update cascade	//外键
+);

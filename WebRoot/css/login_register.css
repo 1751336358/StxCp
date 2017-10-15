@@ -1,0 +1,158 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+#imgbk{
+	width:100%;
+	height:100%;
+	position: relative;
+}
+#cover{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+
+}
+#cover #box{
+	width:664px;
+	height:377px;
+	margin:0 auto;
+	border:1px solid green;
+	margin-top:250px;
+	position: relative;
+}
+#cover #box #left{
+	float:left;
+	width:50%;
+	height:64px;
+	line-height:64px;
+	color:white;
+	font-family:"Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	font-size:30px;
+	text-align:center;
+	background: black;
+/*	opacity:0.5;
+	filter:alpha(opacity=50);*/
+}
+#cover #box #right{
+	float:left;
+	width:50%;
+	height:64px;
+	line-height:64px;
+	color:black;
+	font-family:"Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	font-size:30px;
+	text-align:center;
+	background: white;
+}
+
+#cover #box #login_show #loginusername{
+	width:375px;
+	height:40px;
+	position: absolute;
+	top:114px;
+	left:29px;
+	text-indent: 5px;
+	border-radius:3px;
+	border:1px solid #999999;
+}
+/*Ajax²âÊÔµÇÂ¼ÓÃ»§Ãû*/
+#cover #box #login_show  #test_login_username{
+	position: absolute;
+	left:410px;
+	top:122px;
+	color:red;
+	font-size:18px;
+	display:none;/*Òþ²Ø*/
+}
+
+#cover #box #login_show #loginpassword{
+	width:375px;
+	height:40px;
+	position: absolute;
+	top:154px;
+	left:29px;
+	text-indent: 5px;
+	border-radius:3px;
+	border:1px solid #999999;
+}
+/*Ajax²âÊÔµÇÂ¼ÃÜÂë*/
+#cover #box #login_show  #test_login_pwd{
+	position: absolute;
+	left:410px;
+	top:162px;
+	color:red;
+	font-size:18px;
+	display:none;/*Òþ²Ø*/
+}
+#cover #box #login_show #checkbox{
+	position: absolute;
+	left:29px;
+	top:214px;
+}
+#cover #box #login_show #nextautologin{
+	position: absolute;
+	left:49px;
+	top:212px;
+}
+
+#cover #box #btn{
+	position: absolute;
+	left:29px;
+	top:255px;
+	width:375px;
+	height:50px;
+	line-height: 50px;
+	text-align: center;
+	background: #FF6767;
+	color:white;
+	font-family: "Hiragino Sans GB",STHeiti,"Î¢ÈíÑÅºÚ","Microsoft YaHei",Helvetica,Arial,serif;
+	border-radius:4px;
+	border:none;
+	font-size:25px;
+	font-weight: 500;
+}
+#cover #box #login_show{
+	/*¿ØÖÆµÇÂ¼µÄ±íµ¥ÏÔÊ¾*/
+	display:block;
+}
+#cover #box #register_show{
+	/*¿ØÖÆ×¢²áµÄ±íµ¥ÏÔÊ¾*/
+	display:none;
+}
+
+#cover #box #register_show #r_zh{
+	position:absolute;
+	left:29px;
+	top:114px;
+	width:375px;
+	height:40px;
+	text-indent: 5px;
+}
+#cover #box #register_show #r_uname{
+	position:absolute;
+	left:29px;
+	top:154px;
+	width:375px;
+	height:40px;
+	text-indent: 5px;
+}
+/*Ajax²âÊÔ×¢²áÓÃ»§Ãû*/
+#cover #box #register_show #test_register_username{
+	position: absolute;
+	left:410px;
+	top:162px;
+	color:red;
+	font-size:18px;
+	display:none;	/*Òþ²Ø*/
+}
+#cover #box #register_show #r_pwd{
+	position:absolute;
+	left:29px;
+	top:194px;
+	width:375px;
+	height:40px;
+	text-indent: 5px;
+}

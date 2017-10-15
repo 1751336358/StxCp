@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.stx.mapper.SayMapper">
+	<!-- 将评论插入数据库 -->
+	<insert id="addSay" parameterType="com.stx.pojo.Say">
+		insert into say(userid,caiid,detail,time) values(#{userid},#{caiid},#{detail},#{time})
+	</insert>
+	
+	<!-- 查询出所有的评论，根据caiid -->
+	<select id="selSayByCaiid" parameterType="int" resultType="com.stx.pojo.Say">
+		select * from say where caiid=#{id} order by id desc
+	</select>
+	
+	<!-- 查出最新的评论 -->
+	<select id="selNewSay" resultType="com.stx.pojo.Say">
+		select * from say where id=(select max(id) from say)
+	</select>
+	
+	<!-- 删除评论，根据sayid -->
+	<delete id="delSayBysayid" parameterType="int">
+		delete from say where id=#{sayid}
+	</delete>
+</mapper>
